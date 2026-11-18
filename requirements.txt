@@ -1,0 +1,22 @@
+# Exact environment of the paper's runs: a single NVIDIA H100 80GB, bfloat16.
+# bf16 greedy decoding is deterministic, but its low-order bits depend on the GPU
+# class, the attention kernels and the library versions. Use these pins (and
+# flash-attn) to reproduce the published predictions as closely as possible.
+#
+# Note: Qwen3.5 mixes full attention with linear-attention layers. Optional
+# kernel packages for those layers (flash-linear-attention, causal-conv1d) change
+# their numerics; which of them the paper's environment had installed is not
+# recorded, so a small fraction of greedy tokens may differ on other setups.
+torch==2.10.0
+transformers==5.5.0
+accelerate==1.13.0
+numpy==2.4.3
+flash-attn==2.8.3          # needs a CUDA GPU; skip on CPU / Apple silicon (sdpa is used instead)
+
+tqdm
+openai>=1.30               # DRQA LLM-as-judge and DRQA construction (OpenRouter)
+python-dotenv
+
+# Dataset download / conversion (scripts/download_data.py, scripts/convert_retrievalqa.py)
+datasets
+huggingface_hub

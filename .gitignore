@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+
+# Outputs
+results/
+drqa/output/
+*.judge*.jsonl
+
+# Secrets / OS
+.env
+.DS_Store
+
+# Derived or downloaded data (see data/README.md)
+data/DRQA/drqa_at5.jsonl
+data/NQ/
+data/TQA/
+data/PopQA/
+data/RetrievalQA/

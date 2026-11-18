@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use DCCD or DRQA, please cite the paper below."
+title: "DCCD: Dual-Confidence Contrastive Decoding for Retrieval-Augmented Generation"
+type: software
+repository-code: "https://github.com/ServiceNow/dccd-rag"
+license: Apache-2.0
+authors:
+  - given-names: Raymond
+    family-names: Li
+  - given-names: Md Tawkat Islam
+    family-names: Khondaker
+  - given-names: Amirhossein
+    family-names: Abaskohi
+  - given-names: Gabriel
+    family-names: Murray
+  - given-names: Giuseppe
+    family-names: Carenini
+  - given-names: Issam H.
+    family-names: Laradji
+preferred-citation:
+  type: conference-paper
+  title: "Dual-Confidence Contrastive Decoding for Retrieval-Augmented Generation"
+  collection-title: "Findings of the Association for Computational Linguistics: EACL 2027"
+  year: 2027
+  url: "https://github.com/ServiceNow/dccd-rag"
+  authors:
+    - given-names: Raymond
+      family-names: Li
+    - given-names: Md Tawkat Islam
+      family-names: Khondaker
+    - given-names: Amirhossein
+      family-names: Abaskohi
+    - given-names: Gabriel
+      family-names: Murray
+    - given-names: Giuseppe
+      family-names: Carenini
+    - given-names: Issam H.
+      family-names: Laradji

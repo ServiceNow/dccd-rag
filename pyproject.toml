@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dccd-rag"
+version = "1.0.0"
+description = "Dual-Confidence Contrastive Decoding (DCCD) for retrieval-augmented generation, and the DRQA benchmark."
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+authors = [
+  { name = "Raymond Li" },
+  { name = "Md Tawkat Islam Khondaker" },
+  { name = "Amirhossein Abaskohi" },
+  { name = "Gabriel Murray" },
+  { name = "Giuseppe Carenini" },
+  { name = "Issam H. Laradji" },
+]
+keywords = ["retrieval-augmented generation", "RAG", "contrastive decoding",
+            "knowledge conflicts", "LLM", "decoding", "benchmark"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "torch>=2.1",
+  "transformers>=4.57",
+  "accelerate>=0.26",
+  "numpy",
+  "tqdm",
+  "openai>=1.30",
+  "python-dotenv",
+]
+
+[project.optional-dependencies]
+flash = ["flash-attn>=2.6"]
+data = ["datasets", "huggingface_hub"]
+dev = ["pytest>=8"]
+
+[project.urls]
+Repository = "https://github.com/ServiceNow/dccd-rag"
+Issues = "https://github.com/ServiceNow/dccd-rag/issues"
+
+[tool.setuptools]
+packages = ["dccd"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
