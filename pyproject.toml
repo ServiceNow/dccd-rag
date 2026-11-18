@@ -38,7 +38,6 @@ dependencies = [
 [project.optional-dependencies]
 flash = ["flash-attn>=2.6"]
 data = ["datasets", "huggingface_hub"]
-dev = ["pytest>=8"]
 
 [project.urls]
 Repository = "https://github.com/ServiceNow/dccd-rag"
@@ -46,6 +45,3 @@ Issues = "https://github.com/ServiceNow/dccd-rag/issues"
 
 [tool.setuptools]
 packages = ["dccd"]
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]

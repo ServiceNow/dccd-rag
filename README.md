@@ -28,7 +28,6 @@
 <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3.10+">
 <img src="https://img.shields.io/badge/PyTorch-2.x-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch">
 <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Transformers-%E2%89%A54.57-FFD21E?style=flat-square" alt="Hugging Face Transformers">
-<a href="https://github.com/ServiceNow/dccd-rag/actions/workflows/tests.yml"><img src="https://img.shields.io/github/actions/workflow/status/ServiceNow/dccd-rag/tests.yml?branch=main&style=flat-square&label=tests" alt="Tests"></a>
 <a href="https://github.com/ServiceNow/dccd-rag/stargazers"><img src="https://img.shields.io/github/stars/ServiceNow/dccd-rag?style=flat-square&logo=github" alt="GitHub stars"></a>
 </p>
 
@@ -357,8 +356,7 @@ dccd-rag/
 ├── examples/             # quickstart.py
 ├── data/                 # DRQA (+ downloaded datasets); see data/README.md
 ├── drqa/                 # DRQA construction pipeline + text-only DRBench source
-├── assets/               # figures used in this README
-└── tests/                # CPU test suite (tiny random models, no downloads)
+└── assets/               # figures used in this README
 ```
 
 <details>
@@ -369,11 +367,8 @@ For every example, `dccd.decoding.generate` advances one batch of streams with a
 
 1. Write a combiner next to `_combine_baseline` / `_combine_dccd` in `dccd/decoding.py`.
 2. Register its name in `BASELINE_MODES` (dispatched by `_combine_baseline`) or `DCCD_MODES` (dispatched to `_combine_dccd`, with support-probe scores), and in `dccd/__init__.py`'s `MODES`. Unknown names are rejected.
-3. Add a test with crafted tensors to `tests/test_decoding.py`.
 
 </details>
-
-Run the tests with `pip install -e ".[dev]" && pytest`. They run on CPU with tiny random models and download nothing.
 
 ## 📝 Citation
 

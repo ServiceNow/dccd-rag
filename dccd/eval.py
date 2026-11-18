@@ -16,7 +16,7 @@ from typing import Dict, List, Optional
 
 from .prompts import JUDGE_PROMPT
 
-_SLEEP = asyncio.sleep          # retry back-off (patched in tests)
+_SLEEP = asyncio.sleep          # retry back-off
 
 # ---------------------------------------------------------------------------
 # Normalized string exact match (SQuAD-style normalization)
