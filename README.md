@@ -282,9 +282,6 @@ ex.question, ex.answers                    # question and gold answer
 
 The model sees each document as `Document [i](Title: Doc i) <text>`. The type, date, source format and other metadata are never added to the input. See [`data/README.md`](data/README.md) for the full schema, notes on dates, and dataset statistics. To rebuild DRQA from the bundled DRBench source, see [`drqa/README.md`](drqa/README.md).
 
-> [!NOTE]
-> `drqa_at10.jsonl` is the exact @10 bundle used in the paper. The @5 bundle (`drqa_at5.jsonl`, derived automatically from @10) keeps one correct, one misinformation, one temporal and two noise documents per question. That matches the paper's composition, but the original @5 file was not preserved, so DRQA@5 numbers can differ slightly from Table 1.
-
 > [!WARNING]
 > DRQA contains deliberately generated misinformation and outdated statements about fictional companies. It is for research use only and must not be used as a factual source.
 
