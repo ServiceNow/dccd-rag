@@ -392,15 +392,6 @@ If you find DCCD or DRQA useful, please cite:
 
 DRQA is built on [DRBench](https://github.com/ServiceNow/drbench) ([paper](https://arxiv.org/abs/2510.00172)). We thank the authors of [CAD](https://aclanthology.org/2024.naacl-short.69/), [AdaCAD](https://aclanthology.org/2025.naacl-long.581/), [DVD](https://aclanthology.org/2024.emnlp-main.266/) and [CoCoA](https://aclanthology.org/2025.emnlp-main.348/) for their decoding methods. We also thank the creators of Natural Questions, TriviaQA, [FiD](https://github.com/facebookresearch/FiD), [PopQA](https://huggingface.co/datasets/akariasai/PopQA) and [RetrievalQA](https://huggingface.co/datasets/aialt/RetrievalQA) for the evaluation data, and 🤗 [Transformers](https://github.com/huggingface/transformers).
 
-## ⭐ Star history
-
-<a href="https://star-history.com/#ServiceNow/dccd-rag&Date">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=ServiceNow/dccd-rag&type=Date&theme=dark">
-    <img src="https://api.star-history.com/svg?repos=ServiceNow/dccd-rag&type=Date" alt="Star history chart" width="600">
-  </picture>
-</a>
-
 ## 📄 License
 
 The code is released under the [Apache 2.0 License](LICENSE). DRQA is derived from DRBench (Apache 2.0). The NQ, TriviaQA, PopQA and RetrievalQA datasets keep their original licenses.
