@@ -138,8 +138,6 @@ Here $\ell$ are next-token log-probabilities, and each stream is restricted to i
 - **Doc-Only** drops $c_{i,t}$.
 - **Random** samples the two documents uniformly (keeping the margin gate).
 
-The paper's DRQA ablation rows were scored over the predictions the judge graded without an API error, whereas Table 1 counts those as incorrect. `scripts/evaluate.py` retries failed judge calls and scores all 568 questions, so a rerun can differ slightly.
-
 Document-level confidence carries most of the gain on DRQA; token-level confidence adds a consistent edge at @10.
 
 </details>
